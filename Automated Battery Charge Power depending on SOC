@@ -1,0 +1,92 @@
+alias: Automated Battery Charge Power depending on SOC
+description: Automated Battery Charge Power depending on SOC
+trigger:
+  - platform: state
+    entity_id:
+      - sensor.battery_level
+condition: []
+action:
+  - choose:
+      - conditions:
+          - condition: numeric_state
+            entity_id: sensor.battery_level
+            below: 90
+          - condition: and
+            conditions:
+              - condition: or
+                conditions:
+                  - condition: numeric_state
+                    entity_id: sensor.battery_max_charge_power
+                    above: 2550
+                  - condition: numeric_state
+                    entity_id: sensor.battery_max_charge_power
+                    below: 2450
+        sequence:
+          - service: modbus.write_register
+            data:
+              hub: SungrowSHx
+              address: 33046
+              slave: 1
+              value: 250
+          - service: notify.mobile_app_a71_peter
+            metadata: {}
+            data:
+              message: Battery charge power is set to 2500W
+            enabled: false
+        alias: Battery level between 0 and 90 -> max Load 2.5kW
+      - conditions:
+          - condition: numeric_state
+            entity_id: sensor.battery_level
+            below: 95
+            above: 89.9
+          - condition: and
+            conditions:
+              - condition: or
+                conditions:
+                  - condition: numeric_state
+                    entity_id: sensor.battery_max_charge_power
+                    above: 1050
+                  - condition: numeric_state
+                    entity_id: sensor.battery_max_charge_power
+                    below: 950
+        sequence:
+          - service: modbus.write_register
+            data:
+              hub: SungrowSHx
+              address: 33046
+              slave: 1
+              value: 100
+          - service: notify.mobile_app_a71_peter
+            metadata: {}
+            data:
+              message: Battery charge power is set to 1000W
+            enabled: false
+        alias: Battery level between 90 and 95 -> max Load 1.0kW
+      - conditions:
+          - condition: numeric_state
+            entity_id: sensor.battery_level
+            above: 95
+          - condition: and
+            conditions:
+              - condition: or
+                conditions:
+                  - condition: numeric_state
+                    entity_id: sensor.battery_max_charge_power
+                    above: 550
+                  - condition: numeric_state
+                    entity_id: sensor.battery_max_charge_power
+                    below: 450
+        sequence:
+          - service: modbus.write_register
+            data:
+              hub: SungrowSHx
+              address: 33046
+              slave: 1
+              value: 50
+          - service: notify.mobile_app_a71_peter
+            metadata: {}
+            data:
+              message: Battery charge power is set to 500W
+            enabled: false
+        alias: Battery level above 95 -> max Load 0.5kW
+mode: single
