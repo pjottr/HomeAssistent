@@ -1,0 +1,135 @@
+sunton7:
+  objects:
+    # Seitenübergreifend-------------------------------------------------
+    - obj: "p0b1" # temperature label on all pages
+      properties:
+        #text: '{{ states("sensor.trovis_fuhler_aussen_1_af1") }} °C'
+        text: '{{ states("sensor.trovis_fuhler_aussen_1_af1") }} °C'
+    - obj: "p0b2" # time label on all pages
+      properties:
+        text: "{{now().strftime('%Y-%m-%d %H:%M') }}"
+
+    # Seite 1
+    - obj: "p1b105" # PV Power
+      properties:
+        text: '{{ states("sensor.total_dc_power") }} W'
+    - obj: "p1b107" # Grid Import Power
+      properties:
+        text: '{{ states("sensor.import_power") }} W'
+    - obj: "p1b109" # Grid Export Power
+      properties:
+        text: '{{ states("sensor.export_power") }} W'
+    - obj: "p1b111" # Home Power
+      properties:
+        text: '{{ states("sensor.load_power") }} W'
+    - obj: "p1b113" # Battery level
+      properties:
+        text: '{{ states("sensor.battery_level") }} %'
+    - obj: "p1b115" # Wallbox load
+      properties:
+        text: " n.A. W"
+
+    - obj: "p1b121" # UG Gefrierschrank Beko Temperatur
+      properties:
+        text: '{{ states("sensor.ug_kuehlschrank_klima_am2301_05_temperature") }} °C'
+    - obj: "p1b123" # UG Kühlschrank Beko Temperatur
+      properties:
+        text: '{{ states("sensor.ug_kuehlschrank_klima_am2301_04_temperature") }} °C'
+    - obj: "p1b125" # G Gefrierschrank Miele Temperatur
+      properties:
+        text: " n. A. °C"
+    - obj: "p1b127" # Küche???
+      properties:
+        text: " n. A. °C"
+    - obj: "p1b129" # Blutdruck
+      properties:
+        text: " n. A. °C"
+
+    - obj: "p1b142" # Stube Temperatur
+      properties:
+        text: '{{ states("sensor.eg_stube_klima_temperature") }} °C'
+    - obj: "p1b144" # Linus Temperatur
+      properties:
+        text: '{{ states("sensor.og_linus_klima_am2301_temperature") }} °C'
+    - obj: "p1b146" # Benedikt Temperatur
+      properties:
+        text: '{{ states("sensor.og_benedikt_klima_am2301_temperature") }} °C'
+    - obj: "p1b148" # Sophie Temperatur
+      properties:
+        text: '{{ states("sensor.og_sophie_klima_am2301_temperature") }} °C'
+    - obj: "p1b150" # Bad Temperatur
+      properties:
+        text: '{{ states("sensor.og_bad_klima_temperature") }} °C'
+
+    - obj: "p1b162" # Stube Luftfeuchtigkeit
+      properties:
+        text: '{{ states("sensor.eg_stube_klima_humidity") }}  %'
+    - obj: "p1b164" # Linus Luftfeuchtigkeit
+      properties:
+        text: '{{ states("sensor.og_linus_klima_am2301_humidity") }}  %'
+    - obj: "p1b166" # Benedikt Luftfeuchtigkeit
+      properties:
+        text: '{{ states("sensor.og_benedikt_klima_am2301_humidity") }}  %'
+    - obj: "p1b168" # Sophie Luftfeuchtigkeit
+      properties:
+        text: '{{ states("sensor.og_sophie_klima_am2301_humidity") }}  %'
+    - obj: "p1b170" # Bad Luftfeuchtigkeit
+      properties:
+        text: '{{ states("sensor.og_bad_klima_humidity") }}  %'
+
+    - obj: "p4b110" # Linus Licht
+      properties:
+        "val": '{{ 1 if is_state("switch.og_linus_licht01", "on") else 0 }}'
+        "text": '{{ "\uE6E8" if is_state("switch.og_linus_licht01", "on") else "\uE335" | e }}'
+      event:
+        "down":
+          - service: homeassistant.toggle
+            entity_id: "switch.og_linus_licht01"
+    - obj: "p4b111" # Benedikt Licht
+      properties:
+        "val": '{{ 1 if is_state("switch.og_benedikt_licht01", "on") else 0 }}'
+        "text": '{{ "\uE6E8" if is_state("switch.og_benedikt_licht01", "on") else "\uE335" | e }}'
+      event:
+        "down":
+          - service: homeassistant.toggle
+            entity_id: "switch.og_benedikt_licht01"
+    - obj: "p4b112" # Sophie Licht
+      properties:
+        "val": '{{ 1 if is_state("switch.og_sophie_licht01", "on") else 0 }}'
+        "text": '{{ "\uE6E8" if is_state("switch.og_sophie_licht01", "on") else "\uE335" | e }}'
+      event:
+        "down":
+          - service: homeassistant.toggle
+            entity_id: "switch.og_sophie_licht01"
+    - obj: "p4b113" # Bad Licht (noch nicht erfasst, nutze Licht EG WC)
+      properties:
+        "val": '{{ 1 if is_state("switch.eg_bad_l01", "on") else 0 }}'
+        "text": '{{ "\uE6E8" if is_state("switch.eg_bad_l01", "on") else "\uE335" | e }}'
+      event:
+        "down":
+          - service: homeassistant.toggle
+            entity_id: "switch.eg_bad_l01"
+    - obj: "p4b115" # Luftfeuchtigkeit Linus
+      properties:
+        text: '{{ "n.A." if is_state("sensor.og_linus_klima_am2301_humidity", "unavailable") else states("sensor.og_linus_klima_am2301_humidity") }} %'
+    - obj: "p4b117" # Luftfeuchtigkeit Benedikt
+      properties:
+        text: '{{ "n.A." if is_state("sensor.og_benedikt_klima_am2301_humidity", "unavailable") else states("sensor.og_benedikt_klima_am2301_humidity") }} %'
+    - obj: "p4b119" # Luftfeuchtigkeit Sophie
+      properties:
+        text: '{{ "n.A." if is_state("sensor.og_sophie_klima_am2301_humidity", "unavailable") else states("sensor.og_sophie_klima_am2301_humidity") }} %'
+    - obj: "p4b121" # Luftfeuchtigkeit Bad
+      properties:
+        text: '{{ "n.A." if is_state("sensor.og_bad_klima_humidity", "unavailable") else states("sensor.og_bad_klima_humidity") }} %'
+    - obj: "p4b123" # Temperatur Linus
+      properties:
+        text: '{{ "n.A." if is_state("sensor.og_linus_klima_am2301_temperature", "unavailable") else states("sensor.og_linus_klima_am2301_temperature") }}°C'
+    - obj: "p4b125" # Temperatur Benedikt
+      properties:
+        text: '{{ "n.A." if is_state("sensor.og_benedikt_klima_am2301_temperature", "unavailable") else states("sensor.og_benedikt_klima_am2301_temperature") }}°C'
+    - obj: "p4b127" # Temperatur Sophie
+      properties:
+        text: '{{ "n.A." if is_state("sensor.og_sophie_klima_am2301_temperature", "unavailable") else states("sensor.og_sophie_klima_am2301_temperature") }}°C'
+    - obj: "p4b129" # Temperatur bad
+      properties:
+        text: '{{ "n.A." if is_state("sensor.og_bad_klima_temperature", "unavailable") else states("sensor.og_bad_klima_temperature") }}°C'
