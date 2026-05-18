@@ -1,0 +1,122 @@
+{"page":0,"comment":"---------- Seite 0 wird auf allen Seiten angezeigt ---------------------------------------------------------------------------------"}
+{"comment":"---------- Datum,Uhrzeit&Temperatur ---------------------------------------------------------------------------------"}
+{"page":0,"id":1,"obj":"label","x":15,"y":0,"h":42,"w":100,"text":"00:00","align":0,"bg_color":"#2c3e50","text_font":32,"text_color":"#ffffff"}
+{"page":0,"id":2,"obj":"label","x":560,"y":0,"h":42,"w":230,"text":"00.0","align":2,"bg_color":"#2c3e50","text_font":32,"text_color":"#FFFFFF"}
+
+{"page":1,"comment":"---------- Seite 1 Übersicht---"}
+{"page":1,"id":100,"obj":"label","x":250,"y":0,"h":42,"w":300,"text":"Hausübersicht","align":1,"text_font":32}
+{"comment":" -----------PV ------------"}
+{"page":1,"id":104,"obj":"label","x":15,"y":70,"w":310,"h":30,"text":"#00FF00 \uEA72#  PV Anlage","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":105,"obj":"label","x":15,"y":70,"w":310,"h":30,"text":"--- W","align":2,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":106,"obj":"label","x":15,"y":100,"w":310,"h":30,"text":"#B00000 \uED3E#  Netz Import","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":107,"obj":"label","x":15,"y":100,"w":310,"h":30,"text":"--- W","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":108,"obj":"label","x":15,"y":130,"w":310,"h":30,"text":"#008000 \uED3E#  Netz Export","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":109,"obj":"label","x":15,"y":130,"w":310,"h":30,"text":"--- W","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":110,"obj":"label","x":15,"y":160,"w":310,"h":30,"text":"#0000FF \uE2DC#  Hausverbrauch","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":111,"obj":"label","x":15,"y":160,"w":310,"h":30,"text":"--- W","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":112,"obj":"label","x":15,"y":190,"w":310,"h":30,"text":"#FFA500 \uF2A2#  Battery SoC","align":0,"text_font":24,"text_color":"#FFFFFF"}
+{"page":1,"id":113,"obj":"label","x":15,"y":190,"w":310,"h":30,"text":"--- %","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":114,"obj":"label","x":15,"y":220,"w":310,"h":30,"text":"#F0E68C \uE5F1#  Wallbox","align":0,"text_font":24,"text_color":"#FFFFFF"}
+{"page":1,"id":115,"obj":"label","x":15,"y":220,"w":310,"h":30,"text":"--- W","align":2, "text_font":24, "text_color":"#ffffff"}
+{"comment":" -------Temperaturen Kühl und Gefrierschränke------ "}
+{"page":1,"id":120,"obj":"label","x":15,"y":280,"w":310,"h":30,"text":"#008000 \uE50F#  Beko Gefriersch.","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":121,"obj":"label","x":15,"y":280,"w":310,"h":30,"text":"--- °C","align":2,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":122,"obj":"label","x":15,"y":310,"w":310,"h":30,"text":"#008000 \uE50F#  Beko Kühlschrank","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":123,"obj":"label","x":15,"y":310,"w":310,"h":30,"text":"--- °C","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":124,"obj":"label","x":15,"y":340,"w":310,"h":30,"text":"#008000 \uE50F#  Miele Gefriersch.","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":125,"obj":"label","x":15,"y":340,"w":310,"h":30,"text":"--- °C","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":126,"obj":"label","x":15,"y":370,"w":310,"h":30,"text":"#008000 \uE50F#  Bosch Gefriersch.","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":127,"obj":"label","x":15,"y":370,"w":310,"h":30,"text":"--- °C","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":128,"obj":"label","x":15,"y":400,"w":310,"h":30,"text":"#008000 \uE50F#  Bosch Kühlschrank","align":0,"text_font":24,"text_color":"#FFFFFF"}
+{"page":1,"id":129,"obj":"label","x":15,"y":400,"w":310,"h":30,"text":"--- °C","align":2, "text_font":24, "text_color":"#ffffff"}
+
+{"comment":" -------Temperaturen Zimmer------ "}
+{"page":1,"id":140,"obj":"label","x":480,"y":70,"w":310,"h":30,"text":"#008000 \uE50F#  Temperatur","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":141,"obj":"label","x":415,"y":100,"w":310,"h":30,"text":"#008000 \uE50F#  Stube","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":142,"obj":"label","x":415,"y":100,"w":310,"h":30,"text":"--- °C","align":2,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":143,"obj":"label","x":415,"y":130,"w":310,"h":30,"text":"#008000 \uE50F#  Linus","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":144,"obj":"label","x":415,"y":130,"w":310,"h":30,"text":"--- °C","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":145,"obj":"label","x":415,"y":160,"w":310,"h":30,"text":"#008000 \uE50F#  Benedikt","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":146,"obj":"label","x":415,"y":160,"w":310,"h":30,"text":"--- °C","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":147,"obj":"label","x":415,"y":190,"w":310,"h":30,"text":"#008000 \uE50F#  Sophie","align":0,"text_font":24,"text_color":"#FFFFFF"}
+{"page":1,"id":148,"obj":"label","x":415,"y":190,"w":310,"h":30,"text":"--- °C","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":149,"obj":"label","x":415,"y":220,"w":310,"h":30,"text":"#008000 \uE50F#  Bad","align":0,"text_font":24,"text_color":"#FFFFFF"}
+{"page":1,"id":150,"obj":"label","x":415,"y":220,"w":310,"h":30,"text":"--- °C","align":2, "text_font":24, "text_color":"#ffffff"}
+
+{"comment":" -------Luftfeuchtigkeit Zimmer------ "}
+{"page":1,"id":160,"obj":"label","x":480,"y":250,"w":310,"h":30,"text":"#0000FF \uE58E#  Luftfeuchtigkeit","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":161,"obj":"label","x":415,"y":280,"w":310,"h":30,"text":"#0000FF \uE58E#  Stube","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":162,"obj":"label","x":415,"y":280,"w":310,"h":30,"text":"--- %","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":163,"obj":"label","x":415,"y":310,"w":310,"h":30,"text":"#0000FF \uE58E#  Linus","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":164,"obj":"label","x":415,"y":310,"w":310,"h":30,"text":"--- %","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":165,"obj":"label","x":415,"y":340,"w":310,"h":30,"text":"#0000FF \uE58E#  Benedikt","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":166,"obj":"label","x":415,"y":340,"w":310,"h":30,"text":"--- %","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":167,"obj":"label","x":415,"y":370,"w":310,"h":30,"text":"#0000FF \uE58E#  Sophie","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":168,"obj":"label","x":415,"y":370,"w":310,"h":30,"text":"--- %","align":2, "text_font":24, "text_color":"#ffffff"}
+{"page":1,"id":169,"obj":"label","x":415,"y":400,"w":310,"h":30,"text":"#0000FF \uE58E#  Bad","align":0,"text_font":24,"text_color":"#ffffff"}
+{"page":1,"id":170,"obj":"label","x":415,"y":400,"w":310,"h":30,"text":"--- %","align":2, "text_font":24, "text_color":"#ffffff"}
+
+
+{"page":2,"comment":"---------- Seite 2 Keller ------------"}
+{"page":2,"id":100,"obj":"label","x":250,"y":0,"h":42,"w":300,"text":"Keller","align":1,"text_font":32}
+{"page":2,"id":101,"obj":"img","src":"L:/Keller_quer_klein.png","x":40,"y":0,"w":727,"h":480,"fitscreen":1,"zoom":200,"antialias":1}
+{"page":2,"id":102,"obj":"label","x":180,"y":400,"text":"Hauswirtschaftsraum","align":0,"text_font":10, "text_color":"Red"}
+{"page":2,"id":103,"obj":"label","x":180,"y":75,"text":"Werkstatt","align":0,"text_font":10, "text_color":"Red"}
+{"page":2,"id":104,"obj":"label","x":575,"y":75,"text":"Arbeitszimmer","align":0,"text_font":10, "text_color":"Red"}
+
+{"page":3,"comment":"---------- Seite 3 Erdgeschoss ------------"}
+{"page":3,"id":100,"obj":"label","x":250,"y":0,"h":42,"w":300,"text":"Erdgeschoss","align":1,"text_font":32}
+{"page":3,"id":101,"obj":"img","src":"L:/Erdgeschoss_quer_klein.png","x":40,"y":0,"w":726,"h":480,"fitscreen":1,"zoom":200,"antialias":1}
+{"page":3,"id":102,"obj":"label","x":200,"y":320,"text":"WC","align":0,"text_font":10, "text_color":"Red"}
+{"page":3,"id":103,"obj":"label","x":180,"y":75,"text":"Wohnzimmer","align":0,"text_font":10, "text_color":"Red"}
+{"page":3,"id":104,"obj":"label","x":585,"y":75,"text":"Esszimmer","align":0,"text_font":10, "text_color":"Red"}
+{"page":3,"id":105,"obj":"label","x":595,"y":400,"text":"Küche","align":0,"text_font":10, "text_color":"Red"}
+
+
+{"page":4,"comment":"---------- Seite 4 Obergeschoss ------------"}
+{"page":4,"id":100,"obj":"label","x":250,"y":0,"h":42,"w":300,"text":"Obergeschoss","align":1,"text_font":32}
+{"page":4,"id":101,"obj":"img","src":"L:/Obergeschoss_quer_klein.png","x":70,"y":0,"w":660,"h":480,"fitscreen":1,"zoom":200,"antialias":1}
+{"page":4,"id":102,"obj":"label","x":170,"y":400,"text":"Linus","align":0,"text_font":10, "text_color":"Red"}
+{"page":4,"id":103,"obj":"label","x":170,"y":75,"text":"Benedikt","align":0,"text_font":10, "text_color":"Red"}
+{"page":4,"id":104,"obj":"label","x":600,"y":75,"text":"Sophie","align":0,"text_font":10, "text_color":"Red"}
+{"page":4,"id":105,"obj":"label","x":610,"y":280,"text":"Bad","align":0,"text_font":10, "text_color":"Red"}
+{"page":4,"id":106,"obj":"label","x":400,"y":75,"text":"Schrankraum","align":0,"text_font":10, "text_color":"Red"}
+{"page":4,"id":110,"obj":"btn","x":210,"y":300,"w":30,"h":30,"toggle":true,"text":"\uE335","text_font":18,"align":1,"comment":"Licht Linus"}
+{"page":4,"id":111,"obj":"btn","x":210,"y":100,"w":30,"h":30,"toggle":true,"text":"\uE335","text_font":18,"align":1,"comment":"Licht Benedikt"}
+{"page":4,"id":112,"obj":"btn","x":520,"y":100,"w":30,"h":30,"toggle":true,"text":"\uE335","text_font":18,"align":1,"comment":"Licht Sophie"}
+{"page":4,"id":113,"obj":"btn","x":520,"y":300,"w":30,"h":30,"toggle":true,"text":"\uE335","text_font":18,"align":1,"comment":"Licht Bad"}
+{"page":4,"id":114,"obj":"label","x":210,"y":330,"w":310,"h":30,"text":"#0000FF \uE58E#","align":0,"text_font":18,"comment":"Luftfeuchtigkeit Linus"}
+{"page":4,"id":115,"obj":"label","x":210,"y":330,"w":70,"h":30,"text":"--- %","align":2, "text_font":18, "text_color":"#0000FF","comment":"Luftfeuchtigkeit Linus"}
+{"page":4,"id":116,"obj":"label","x":210,"y":130,"w":310,"h":30,"text":"#0000FF \uE58E#","align":0,"text_font":18,"comment":"Luftfeuchtigkeit Benedikt"}
+{"page":4,"id":117,"obj":"label","x":210,"y":130,"w":70,"h":30,"text":"--- %","align":2, "text_font":18, "text_color":"#0000FF","comment":"Luftfeuchtigkeit Benedikt"}
+{"page":4,"id":118,"obj":"label","x":520,"y":130,"w":310,"h":30,"text":"#0000FF \uE58E#","align":0,"text_font":18,"comment":"Luftfeuchtigkeit Sophie"}
+{"page":4,"id":119,"obj":"label","x":520,"y":130,"w":70,"h":30,"text":"--- %","align":2, "text_font":18, "text_color":"#0000FF","comment":"Luftfeuchtigkeit Sophie"}
+{"page":4,"id":120,"obj":"label","x":520,"y":330,"w":310,"h":30,"text":"#0000FF \uE58E#","align":0,"text_font":18,"comment":"Luftfeuchtigkeit Bad"}
+{"page":4,"id":121,"obj":"label","x":520,"y":330,"w":70,"h":30,"text":"--- %","align":2, "text_font":18, "text_color":"#0000FF","comment":"Luftfeuchtigkeit Bad"}
+{"page":4,"id":122,"obj":"label","x":210,"y":350,"w":310,"h":30,"text":"#008000 \uE50F#","align":0,"text_font":18,"text_color":"#008000","comment":"Temperatur Linus"}
+{"page":4,"id":123,"obj":"label","x":210,"y":350,"w":70,"h":30,"text":"--- °C","align":2, "text_font":18, "text_color":"#008000","comment":"Temperatur Linus"}
+{"page":4,"id":124,"obj":"label","x":210,"y":150,"w":310,"h":30,"text":"#008000 \uE50F#","align":0,"text_font":18,"text_color":"#008000","comment":"Temperatur Benedikt"}
+{"page":4,"id":125,"obj":"label","x":210,"y":150,"w":70,"h":30,"text":"--- °C","align":2, "text_font":18, "text_color":"#008000","comment":"Temperatur Benedikt"}
+{"page":4,"id":126,"obj":"label","x":520,"y":150,"w":310,"h":30,"text":"#008000 \uE50F#","align":0,"text_font":18,"text_color":"#008000","comment":"Temperatur Sophie"}
+{"page":4,"id":127,"obj":"label","x":520,"y":150,"w":70,"h":30,"text":"--- °C","align":2, "text_font":18, "text_color":"#008000","comment":"Temperatur Sophie"}
+{"page":4,"id":128,"obj":"label","x":520,"y":350,"w":310,"h":30,"text":"#008000 \uE50F#","align":0,"text_font":18,"text_color":"#008000","comment":"Temperatur Bad"}
+{"page":4,"id":129,"obj":"label","x":520,"y":350,"w":70,"h":30,"text":"--- °C","align":2, "text_font":18, "text_color":"#008000","comment":"Temperatur Bad"}
+
+
+
+{"page":5,"comment":"---------- Seite 5 Dachgeschoss ------------"}
+{"page":5,"id":100,"obj":"label","x":250,"y":0,"h":42,"w":300,"text":"Dachgeschoss","align":1,"text_font":32}
+{"page":5,"id":101,"obj":"img","src":"L:/Dachgeschoss_quer_klein.png","x":70,"y":0,"w":660,"h":480,"fitscreen":1,"zoom":200,"antialias":1}
+{"page":5,"id":102,"obj":"label","x":575,"y":75,"text":"Schlafzimmer","align":0,"text_font":10, "text_color":"Red"}
+{"page":5,"id":103,"obj":"label","x":490,"y":340,"text":"Bad","align":0,"text_font":10, "text_color":"Red"}
+
+{"comment":"---------- Seitennavigation ---------------------------------------------------------------------------------"}
+{"page":0,"id":5,"obj":"btn","action":"prev","x":0,"y":435,"w":265,"h":45,"bg_color":"#2C3E50","text":"\uE141","text_color":"#FFFFFF","radius":0,"border_side":0,"text_font":28,"bg_opa":75}
+{"page":0,"id":6,"obj":"btn","action":"back","x":267,"y":435,"w":265,"h":45,"bg_color":"#2C3E50","text":"\uE2DC","text_color":"#FFFFFF","radius":0,"border_side":0,"text_font":22,"bg_opa":75}
+{"page":0,"id":7,"obj":"btn","action":"next","x":535,"y":435,"w":265,"h":45,"bg_color":"#2C3E50","text":"\uE142","text_color":"#FFFFFF","radius":0,"border_side":0,"text_font":28,"bg_opa":75}
+
+{"page":1,"id":0,"prev":5,"next":2,"back":1}
+{"page":2,"id":0,"prev":1,"next":3,"back":1}
+{"page":3,"id":0,"prev":2,"next":4,"back":1}
+{"page":4,"id":0,"prev":3,"next":5,"back":1}
+{"page":5,"id":0,"prev":4,"next":1,"back":1}
